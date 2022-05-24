@@ -11,19 +11,38 @@
         }
 
         table {
-            width: 500px;
+            width: 300px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
+        
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
 
         thead,tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        } /*o número que vem antes do "n" é a quantidade de linhas do efeito, também pode ser usado por par ou impar odd - impar ( ou 2n-1) e even - par (ou 2n) */
+    
 
         td.num {
             text-align: right;
@@ -35,6 +54,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION - LEGENDA
             THEAD
                 TR,TD,TH
             TBODY
@@ -43,10 +63,11 @@
                 TR,TD,TH
     -->
     <TABLE>
+        <CAption>População das Unidades Federativas</CAption>
         <THEad>
             <TR>
-                <TH> Estado</TH>
-                <th>População</th>
+                <TH scope="col"> Estado</TH> <!--scope onde o dado se encontra "col" abaixo, "row" na mesma linha-->
+                <th scope="col" style="width: ;50px">População</th>
                 
             </TR>
         </THEad>
@@ -160,9 +181,14 @@
         </TBODy>
 
         <TFoot>
-                <th> Total de Habitantes</th>
+                <th scope="row"> Total de Habitantes</th>
                 <td class="num"><strog>210.147.125</strog></td>
         </TFoot>
     </TABLE>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo doloremque ipsam harum nostrum dignissimos reprehenderit in ipsa. Voluptatem officia, quaerat ab in laboriosam officiis perferendis ipsam, reprehenderit blanditiis illum quisquam?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad tempore delectus distinctio nihil sint necessitatibus rem totam, saepe quam earum ut repudiandae non. Eveniet, veritatis? Deleniti distinctio minus assumenda quas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit in quibusdam, ipsam nobis inventore incidunt mollitia eaque voluptatum maxime, deserunt provident libero ratione magni cumque aut, molestiae excepturi porro quo?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum vitae aut perspiciatis porro, reiciendis quibusdam nisi. Minus deserunt quasi dicta nam odio expedita, quos esse veniam repellendus? Officiis, necessitatibus provident!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo doloremque ipsam harum nostrum dignissimos reprehenderit in ipsa. Voluptatem officia, quaerat ab in laboriosam officiis perferendis ipsam, reprehenderit blanditiis illum quisquam?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad tempore delectus distinctio nihil sint necessitatibus rem totam, saepe quam earum ut repudiandae non. Eveniet, veritatis? Deleniti distinctio minus assumenda quas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit in quibusdam, ipsam nobis inventore incidunt mollitia eaque voluptatum maxime, deserunt provident libero ratione magni cumque aut, molestiae excepturi porro quo?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum vitae aut perspiciatis porro, reiciendis quibusdam nisi. Minus deserunt quasi dicta nam odio expedita, quos esse veniam repellendus? Officiis, necessitatibus provident!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo doloremque ipsam harum nostrum dignissimos reprehenderit in ipsa. Voluptatem officia, quaerat ab in laboriosam officiis perferendis ipsam, reprehenderit blanditiis illum quisquam?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad tempore delectus distinctio nihil sint necessitatibus rem totam, saepe quam earum ut repudiandae non. Eveniet, veritatis? Deleniti distinctio minus assumenda quas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit in quibusdam, ipsam nobis inventore incidunt mollitia eaque voluptatum maxime, deserunt provident libero ratione magni cumque aut, molestiae excepturi porro quo?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum vitae aut perspiciatis porro, reiciendis quibusdam nisi. Minus deserunt quasi dicta nam odio expedita, quos esse veniam repellendus? Officiis, necessitatibus provident!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo doloremque ipsam harum nostrum dignissimos reprehenderit in ipsa. Voluptatem officia, quaerat ab in laboriosam officiis perferendis ipsam, reprehenderit blanditiis illum quisquam?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad tempore delectus distinctio nihil sint necessitatibus rem totam, saepe quam earum ut repudiandae non. Eveniet, veritatis? Deleniti distinctio minus assumenda quas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit in quibusdam, ipsam nobis inventore incidunt mollitia eaque voluptatum maxime, deserunt provident libero ratione magni cumque aut, molestiae excepturi porro quo?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum vitae aut perspiciatis porro, reiciendis quibusdam nisi. Minus deserunt quasi dicta nam odio expedita, quos esse veniam repellendus? Officiis, necessitatibus provident!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo doloremque ipsam harum nostrum dignissimos reprehenderit in ipsa. Voluptatem officia, quaerat ab in laboriosam officiis perferendis ipsam, reprehenderit blanditiis illum quisquam?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad tempore delectus distinctio nihil sint necessitatibus rem totam, saepe quam earum ut repudiandae non. Eveniet, veritatis? Deleniti distinctio minus assumenda quas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit in quibusdam, ipsam nobis inventore incidunt mollitia eaque voluptatum maxime, deserunt provident libero ratione magni cumque aut, molestiae excepturi porro quo?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum vitae aut perspiciatis porro, reiciendis quibusdam nisi. Minus deserunt quasi dicta nam odio expedita, quos esse veniam repellendus? Officiis, necessitatibus provident!</p>
 </body>
 </html>
