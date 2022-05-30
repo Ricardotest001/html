@@ -124,6 +124,21 @@ ul  {
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.226);
 }
 
+div.video {
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 57%; /*tem de testar para tirar as barras*/
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+} 
+
 footer {
     color: black;
     text-align: center;
