@@ -144,6 +144,38 @@ footer {
     padding: 5px;
 }
 
+aside.noticias {
+        min-width: 300px;
+        max-width: 1000px;
+        margin: auto;
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: var(--cor1);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;"
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+th {
+    background-color: var(--cor4);
+    color: white;
+    font-weight: bolder;
+}
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+ul.administrativo {
+    list-style-type: '\2714\00A0\00A0'; 
+    list-style-position: inside; 
+    columns: 3;
+}
+
 footer a {
     color: black;
     font-weight: bolder;
