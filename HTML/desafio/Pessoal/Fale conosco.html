@@ -11,21 +11,11 @@
 </head>
 <body>
     <header>
-        <img src="Imagem/Principal2.JPG" alt="entrada da escola">
-        <h1 class="">Centro Educacional Felicidade do saber</h1>
-        <p> Criado em 1992, o Centro Educional Felicidade do Saber busca a formação completa do cidadão</p>
+        <img src="" alt="entrada da escola">
+        <h1 class="">Nome do site</h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dignissimos dolorem iusto tempora! Suscipit architecto adipisci deserunt exercitationem, dignissimos impedit, vel, aperiam totam dolorem illum aut id expedita aliquid recusandae.</p>
 
-        <table>
-            <tr>
-              <td>Nome:</td>
-              <td><input type="text" name="nome" size="40"> <br /></td>
-            </tr>
-            <tr>
-              <td>Senha:</td>
-              <td><input type="text" name="sobrenome" size="40"> <br /></td>
-            </tr>
-           </table>
-
+    
         <nav>
             <a href="index.html">Home</a>
             <a href="noticias.html">Notícias</a>
@@ -35,31 +25,19 @@
         </nav>
     </header>
     <main>
-        <form action="http://formmail.kinghost.net/formmail.cgi" method="POST">
-         <input type="hidden" name="recipient" value="testeiseuemail@gmail.com"> <!-- Pode ser qualquer endereço de email -->
-         <input type="hidden" name="redirect" value="http://seudominio"> <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
-         <input type="hidden" name="subject" value="teste de assunto">  <!-- Assunto da mensagem -->
-         <input type="hidden" name="email" value="email@doseudominio">   <!-- Deve ser uma conta de email ativa em seu domínio -->
-        
-         <p>
-         Nome:<br />
-         <input type="text" size="30" name="nome">
-         </p>
-        
-         <p>
-         E-mail:<br />
-         <input type="text" size="30" name="replyto">
-         </p>
-        
-         <p>
-         Comentários:<br />
-         <input type="text" size="30" name="Comentarios">
-         </p>
-        
-         <p>
-         <input type="submit" name="BTEnvia" value="Enviar">
-         <input type="reset" name="BTApaga" value="Apagar"> </p>
-         </form>
+        <form action="cadastro.php" method="post" autocomplete="on"></form>
+        <p>
+            <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
+        </p>
+        <p>
+            <label for="iemal">Email:</label>
+                <input type="email" name="email" id="iemal" autocomplete="email" required>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
     </main>
 </body>
 <footer>
