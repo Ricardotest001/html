@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CEFS</title>
+    <title>Pessoal</title>
     <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilo/style.css">
 </head>
@@ -28,16 +28,37 @@
         <form action="cadastro.php" method="post" autocomplete="on"></form>
         <p>
             <label for="inome">Nome:</label>
-                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required placeholder="Nome completo">
         </p>
         <p>
             <label for="iemal">Email:</label>
-                <input type="email" name="email" id="iemal" autocomplete="email" required>
+                <input type="email" name="email" id="iemal" autocomplete="email" required placeholder="E-mail">
+        </p>
+        <p>
+            <label for="itel">Telefone</label>
+            <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)[0-9]{4,5}-[0-9]{4,5}$" required placeholder="(xx)xxxx-xxxx">
+        </p>
+        <p>
+            <label for="Setor">Setor</label>
+            <select name="setor" id="isetor">
+                <option value="" selected>---Escolha---</option>    
+                <option value="Pedagogico">Pedagógico</option>
+                <option value="Administrativo">Administrativo</option>
+            </select>
+        </p>
+        
+            <label for="inome">Assunto:</label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required placeholder="Nome completo">
+        </p>
+        <p>
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="msg" id="imsg" cols="50" rows="10" placeholder="sua mensagem aqui..."></textarea>
         </p>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
+        <p>
     </main>
 </body>
 <footer>
